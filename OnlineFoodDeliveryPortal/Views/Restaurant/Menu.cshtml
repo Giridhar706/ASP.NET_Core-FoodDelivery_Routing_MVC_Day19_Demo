@@ -1,0 +1,40 @@
+﻿@model List<string>
+
+<h2>Restaurant Menu</h2>
+
+<h3>@ViewBag.Message</h3>
+
+<hr />
+
+<h4>Available Food Items</h4>
+
+<ul>
+    @foreach (var item in Model)
+    {
+        <li>@item</li>
+    }
+</ul>
+
+<hr />
+
+<h3>Quick Navigation</h3>
+
+<br />
+
+<a href="/order-food">
+    <button>Place Food Order</button>
+</a>
+
+<br />
+<br />
+
+<a href="/restaurant/details">
+    <button>Restaurant Details</button>
+</a>
+
+<br />
+<br />
+
+<a href="/restaurant/101">
+    <button>View Restaurant By ID</button>
+</a>
